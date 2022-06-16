@@ -21,6 +21,54 @@ Basic Concept-Make a connection-Request a document-Retrive the Document-Close th
 
 
 
+node.js是js地运行环境。
+
+基于Chrome V8引擎。
+
+npm是JS包管理工具。
+
+主流的语言，都会有自己的包管理器。
+
+php---Composer
+Ruby---gem
+Python---pip,easy_install
+Javascript---bower,npm,yarn
+
+
+Vue和Vue-cli的关系？
+Vue-cli=vue+一堆js插件
+
+vue-cli是一个脚手架，通俗点说就是代码生成器，可以快速生成一套Vue完整的前端
+框架，单独编译，单独部署。
+可以再集成各种第三方插件，扩展出更多的功能。
+
+Vue是渐进式框架，可以用它一个功能，也可以用全家桶。
+
+Vue是一套用于构建用户界面的渐进式JS框架，开发者只需要关注视图层，它不仅易于上手，还便于和第三方库或既有项目的整合。
+
+Element-Ui
+
+element是基于vue实现的一套不依赖业务的UI组件库，提供了丰富的PC端组件，
+减少用户对常用组件的封装，降低了开发的难易程度。
+
+vue和  Element
+
+vue是一个渐进式框架，Element-Ui是组件库。
+
+是vue用来在模板内插入文本的一种数据绑定的基本形式。
+
+Vue.js使用基于HTML的模板语法，允许以声明方式将渲染的DOM绑定到底层VUE
+实例的数据。
+最基本的数据绑定形式是使用‘Mustache语法’（双花括号）的文本插值。
+
+<span>Message:{{msg}}</span>
+
+文件结构：
+
+
+
+
+
 
 
 
