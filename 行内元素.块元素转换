@@ -1,0 +1,5 @@
+把div元素转为行内元素：
+<div style="display:inline"></div>
+
+把行内元素转换为块元素：
+<div style="display:block"></div>
