@@ -1,0 +1,13 @@
+position布局
+
+position有以下几个属性值：
+relative,absolute,fixed,static
+static:无特殊定位，对象遵循正常文档流，默认取该值。top,right,bottom,left等属性不会被引用。
+
+relative:对象遵循正常文档流，但将根据top,right,bottom,left等属性在正常文档流中偏移位置。而其层叠通过z-index属性定义。
+
+absolute：对象脱离正常文档流，使用top,right,bottom,left等属性以浏览器窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。而其层叠通过z-index属性定义。
+
+fixed：对象脱离正常文档流，使用top,right,bottom,left等属性以浏览器窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。而其层叠通过z-index属性定义。
+
+
