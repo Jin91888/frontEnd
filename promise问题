@@ -90,5 +90,24 @@ console.log(err);
 Promise函数
 
 
+Promise三种状态：
+Pending(进行中，初始状态，既不是成功也不是失败状态）
+
+Resolved(已完成）
+
+Rejected（已失败）
+
+
+异步操作从进行中到已完成
+
+从进行中到失败
+
+
+状态一旦改变，就无法再次改变状态，这也是promise名字的由来
+
+一个promise对象只能改变一次
+
+
+
 
 
