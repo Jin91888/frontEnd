@@ -1,0 +1,14 @@
+常用的请求方式是GET和POST.
+
+
+
+1. 原生的Ajax方法：XMLHttpRequest发起请求
+
+2.jQuery发起ajax请求
+
+
+3. Axios发起请求
+
+专注于网络数据请求的js库，相比于原生的XMLHttpReuqest对象，axios简单易用，相对于jQuery,axios更加轻量化，只专注于网络数据请求
+
+4. Fetch请求方式
