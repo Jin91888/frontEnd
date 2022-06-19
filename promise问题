@@ -1,0 +1,94 @@
+I promise a result！
+
+"producing code" is code that can take some time.
+
+"comsuming code" is code that must wait for the result.
+
+A promise is a JS object that links producing code and consuming code.
+
+
+Promise是异步编程的一个解决方案。
+
+
+promise是异步编程提供的一个类，目的是更加优雅的书写复杂的异步任务。
+
+新建一个promise对象：
+new Promise(function(resolve,reject){
+//要做的事情...
+});
+
+通过新建一个Promise对象好像并没有看出来它怎样“更加优雅地书写复杂的异步任务”
+
+如何多次调用异步函数？
+分三次输出字符串，第一次间隔1秒，第二次间隔4秒，第三次间隔3秒。
+
+设置超时
+
+瀑布函数来实现：繁琐，缩进格式非常累赘。
+setTimeout（function）{
+console.log("First");
+ setTimeout function（）{
+console.log("Second");
+setTimeout function(){
+console.log("Third");
+}，3000）；
+}，4000）；
+}，1000）；
+
+new Promise(function (resolve,reject){
+setTimeout(function(){
+console.log("First");
+resolve();
+},1000);
+}).then(function(){
+return new Promise(function(){
+console.log("Second");
+resolve();
+},4000);
+});
+}).then(function(){
+setTimeout(function(){
+console.log("Third");
+},3000);
+});
+
+promise将嵌套格式的代码变成了顺格式的代码。
+
+Promise 构造函数只有一个参数，是一个函数，这个函数在构造之后会直接被异步运行，所以我们称之为起始函数。
+
+起始函数包含两个参数resolve,reject
+
+当promise被构造时，起始函数会被异步执行：
+new Promise(function(resolve,reject){
+console.log("Run");
+});
+这段函数直接输出Run
+resolve 和reject都是函数，其中调用resolve代表一切正常，reject是出现异常时所调用的。
+
+Promise类有.then() .catch() 和 .finally()三个方法，这三个方法的参数都是一个函数。
+
+.then()可以将参数中的函数添加到当前Promise的正常序列
+.catch（）则是设定Promise的异常处理序列
+.finally（）是在Promise执行的最后一定会执行的序列
+
+.then()传入的函数会按顺序依次执行，有任何异常都会直接跳转到catch序列
+
+new Promise(function(resolve,reject){
+console.log(1111);
+resolve(2222);
+}).then(function(value){
+console.log(value){
+return 3333;
+}).then(function (value){
+console.log(value);
+throw"An error";
+}).catch(function(err){
+console.log(err);
+});
+
+
+Promise函数
+
+
+
+
