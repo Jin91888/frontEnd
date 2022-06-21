@@ -1,0 +1,46 @@
+前置知识：
+
+一般数据类型：
+number,string,boolean,null,undefined,symbol------一般数据类型一般存储在栈中
+
+var num = 123
+
+引用数据类型(复杂数据类型):  ---------变量名存储在栈中，值存储在堆中 
+
+object （数组 set Map）统称为object
+<body>
+<script>
+var num = 123
+var person= { name:'乔丹'}-------person 存储在栈中，{name:'乔丹'}存储在堆中，person保存的只是一个指向，只是一个引用
+</script>
+</body>
+用typeof()  判断类型
+
+
+typeof[]  数组
+'object'
+typeof{}    set
+'object'
+typeof new Map()   Map
+'object'
+typeof Symbol()   es6新特性Map
+'symbol'
+
+深浅拷贝-
+//赋值和浅拷贝的区别：
+var person1 = person
+person1.name = 'Nagi'
+
+console.log(person.name); ----  output：Nagi
+console.log(person1.name); ---- output：Nagi
+
+
+以上操作是赋值。
+
+浅拷贝：首先就是必须要创建一个新的对象：即创建一个新的房间：
+
+层次的理解：
+
+
+
+
